@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+/* # é id */
+/* . é classe */
+
+
+
+/* responsivo até 720px */
+@media(max-width: 720px) {
+
+    /* loading */
+    #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #0b930b;
+    }
+
+    .par {
+        position: absolute;
+        top: 50%;
+        width: 25%;
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        background-color: #f2f2f2;
+        font-size: 13px;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        border-radius: 25px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* loading */
+
+
+    nav {
+        display: none;
+    }
+
+    .ul-responsivo {
+        display: table;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    #teste {
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+
+    .menu {
+        font-size: 20px;
+        width: 100%;
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .videos {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10px;
+        column-gap: 10px;
+        margin-bottom: 4px;
+        margin-top: 3px;
+    }
+
+    .bloco-videos {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .link:hover {
+        display: none;
+    }
+
+    .pagina {
+        padding: 10px;
+    }
+}
+
+/* responsivo até 720px */
+
+
+
+/* responsivo acima 721px */
+@media(min-width: 721px) {
+
+    /* loading */
+    #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #0b930b;
+    }
+
+    .par {
+        position: absolute;
+        top: 50%;
+        width: 15%;
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        background-color: #f2f2f2;
+        font-size: 13px;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        border-radius: 25px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* loading */
+
+
+    .pagina {
+        padding: 10px;
+    }
+
+    .ul-responsivo {
+        display: none;
+    }
+
+    .link {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+
+    .bloco-videos {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .videos {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 10px;
+        column-gap: 10px;
+        margin-bottom: 4px;
+        margin-top: 3px;
+        background-position: 50% 50%;
+    }
+
+    .link:hover {
+        transform: scale(1.03);
+    }
+}
+
+/* responsivo acima de 721px */
